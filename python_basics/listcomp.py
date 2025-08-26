@@ -3,3 +3,7 @@ oddNums = [x for x in nums if x % 2 == 1]
 print(oddNums)
 oddNumsPlusOne = [x + 1 for x in nums if x % 2 == 1]
 print(oddNumsPlusOne)
+
+
+greaterThanFive = [x for x in nums if x > 5]
+print(greaterThanFive)

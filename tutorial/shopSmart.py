@@ -30,7 +30,14 @@ def shopSmart(orderList, fruitShops):
         fruitShops: List of FruitShops
     """
     "*** YOUR CODE HERE ***"
-    return None
+    max = 10000;
+    for shops in fruitShops:
+        value = shops.getPriceOfOrder(orderList)
+        if max > value:
+            max = value
+            name = shops
+
+    return name
 
 
 if __name__ == '__main__':
